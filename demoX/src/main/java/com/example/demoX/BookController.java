@@ -41,6 +41,9 @@ public Book findById(@RequestParam int id){
 @GetMapping("find-by-name")
     public Book findByName(@RequestParam String name){
 
+    for (Book n : bookshelf){
+
+    }
 }
 
 
