@@ -38,7 +38,8 @@ public Book findById(@RequestParam int id){
    }
 
 
-@GetMapping
+@GetMapping("find-by-name")
+
 
 }
 
