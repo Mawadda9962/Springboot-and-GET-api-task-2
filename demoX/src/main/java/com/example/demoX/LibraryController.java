@@ -46,6 +46,10 @@ public class LibraryController {
 
     }
 
-    @GetMapping
+    @GetMapping("/author-report")
+    public String AuthorReport(@RequestParam String authorName){
+
+    }
+
 
 }
