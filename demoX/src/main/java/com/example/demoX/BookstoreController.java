@@ -23,7 +23,7 @@ public class BookstoreController {
     }
 
     @GetMapping("/checkStock")
-    public
+    public String checkStock(@RequestParam Integer id)
 
 
 
