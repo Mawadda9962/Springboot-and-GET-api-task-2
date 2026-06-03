@@ -37,9 +37,14 @@ public class LibraryController {
             }
         }
 
+        if (authorExists){
+            Book book = new Book(id,name,AuthorId);
+            bookList.add(book);
+            return ("Book added Successfully");
+        }else {
+            return("Author not found");
         }
 
-
-
+        }
 
 }
