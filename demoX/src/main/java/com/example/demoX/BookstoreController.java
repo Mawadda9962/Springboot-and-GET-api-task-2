@@ -16,10 +16,8 @@ public class BookstoreController {
     @GetMapping("/addInventoryBook")
     public String addInventoryBook (@RequestParam Integer id, @RequestParam String title, @RequestParam Double price, @RequestParam Integer stockCount){
 
+        InventoryBook book = new
+
     }
-
-
-
-
 
 }
