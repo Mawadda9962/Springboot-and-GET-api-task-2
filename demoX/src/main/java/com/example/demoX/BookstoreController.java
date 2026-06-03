@@ -37,6 +37,7 @@ public class BookstoreController {
     }
 
     @GetMapping()
+    public static
 
 
 
