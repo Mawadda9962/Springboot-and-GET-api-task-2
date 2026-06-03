@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class LibraryController {
     private static List<Author> authorList = new ArrayList<>();
-    private static List<Book> bookList = ;
+    private static List<Book> bookList = new ArrayList<>();
 
 
     @GetMapping("/add-author")
@@ -21,6 +21,8 @@ public class LibraryController {
     }
 
     @GetMapping("/all-authors")
-    public String allAuthor ()
+    public List<Author> getAuthorList(){
+        r
+    }
 
 }
