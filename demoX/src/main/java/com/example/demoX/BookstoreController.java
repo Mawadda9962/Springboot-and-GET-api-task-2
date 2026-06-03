@@ -42,7 +42,9 @@ public class BookstoreController {
         String report = "";
 
         for (InventoryBook b : inventoryBooks){
-            if ()
+            if (b.getStockCount() <= threshold){
+                report = "Title: " + T
+            }
         }
 
     }
