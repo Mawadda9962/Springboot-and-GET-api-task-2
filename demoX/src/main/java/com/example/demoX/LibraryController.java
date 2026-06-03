@@ -22,7 +22,7 @@ public class LibraryController {
 
     @GetMapping("/all-authors")
     public List<Author> getAuthorList(){
-        r
+        return authorList;
     }
 
 }
