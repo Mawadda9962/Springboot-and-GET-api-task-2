@@ -41,7 +41,9 @@ public class BookstoreController {
 
         String report = "";
 
-        for ()
+        for (InventoryBook b : inventoryBooks){
+            if ()
+        }
 
     }
 
