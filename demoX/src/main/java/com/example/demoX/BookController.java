@@ -18,5 +18,9 @@ public class BookController {
         bookshelf.add(book);
         return ("Book added Successfully");
     }
+
+
+@GetMapping("all-books")
+
 }
 
