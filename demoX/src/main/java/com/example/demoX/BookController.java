@@ -13,7 +13,7 @@ public class BookController {
 
 
 
-    public String addBook (){
+    public String addBook (String text){
         //Book book = new B
     }
 }
