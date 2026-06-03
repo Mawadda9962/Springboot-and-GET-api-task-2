@@ -38,15 +38,15 @@ public Book findById(@RequestParam int id){
    }
 
 
-@GetMapping("find-by-name")
+    @GetMapping("/find-by-name")
     public Book findByName(@RequestParam String name){
 
     for (Book n : bookshelf){
-        if (n.getName() == name){
+        if (n.getName().equalsIgnoreCase(name)){
             return n;
         }
     }
-return  null;
+      return  null;
   }
 
 }
