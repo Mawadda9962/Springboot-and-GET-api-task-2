@@ -43,10 +43,10 @@ public Book findById(@RequestParam int id){
 
     for (Book n : bookshelf){
         if (n.getName() == name){
-
+            return n;
         }
-
     }
+
 }
 
 
