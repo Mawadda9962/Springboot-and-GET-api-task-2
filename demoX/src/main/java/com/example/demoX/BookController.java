@@ -42,6 +42,9 @@ public Book findById(@RequestParam int id){
     public Book findByName(@RequestParam String name){
 
     for (Book n : bookshelf){
+        if (n.getName() == name){
+
+        }
 
     }
 }
