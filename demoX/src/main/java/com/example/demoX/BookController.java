@@ -21,7 +21,9 @@ public class BookController {
 
 
 @GetMapping("all-books")
-    public List<Book>
+    public List<Book> getAllBooks(){
+
+}
 
 }
 
