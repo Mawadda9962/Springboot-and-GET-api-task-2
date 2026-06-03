@@ -14,7 +14,7 @@ public class BookController {
 
 
     public String addBook (int id, String name){
-        //Book book = new B
+        Book book = new Book(id,name);
     }
 }
 
