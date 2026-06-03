@@ -14,7 +14,7 @@ public class LibraryController {
 
 
     @GetMapping("/add-author")
-    public String addAuthor (@RequestParam int id, @RequestParam String name, @RequestParam String biography){
+    public String addAuthor (@RequestParam Integer id, @RequestParam String name, @RequestParam String biography){
         Author author = new Author(id, name, biography);
         authorList.add(author);
         return ("Author added Successfully");

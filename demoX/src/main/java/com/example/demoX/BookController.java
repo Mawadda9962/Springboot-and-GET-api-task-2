@@ -1,4 +1,4 @@
-package com.example.demoX;
+/*package com.example.demoX;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,21 +12,21 @@ public class BookController {
 
     private static List<Book> bookshelf = new ArrayList<Book>();
 
-@GetMapping("add-book")
-    public String addBook (@RequestParam int id, @RequestParam String name){
-        Book book = new Book(id,name);
+@GetMapping("/add-book")
+    public String addBook (@RequestParam int id, @RequestParam String name, @RequestParam int authorId){
+        Book book = new Book(id,name,authorId);
         bookshelf.add(book);
         return ("Book added Successfully");
     }
 
 
-@GetMapping("all-books")
+@GetMapping("/all-books")
     public List<Book> getAllBooks(){
     return bookshelf;
 
   }
 
-@GetMapping("find-by-id")
+@GetMapping("/find-by-id")
 public Book findById(@RequestParam int id){
 
     for (Book b : bookshelf){
@@ -60,5 +60,5 @@ public Book findById(@RequestParam int id){
     }
     return ("Sorry, This id book is not found");
   }
-}
+}*/
 
