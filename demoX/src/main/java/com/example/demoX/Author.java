@@ -11,6 +11,28 @@ public class Author {
         this.id = id;
         this.biograph = biograph;
     }
-    \
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBiograph() {
+        return biograph;
+    }
+
+    public void setBiograph(String biograph) {
+        this.biograph = biograph;
+    }
 }
