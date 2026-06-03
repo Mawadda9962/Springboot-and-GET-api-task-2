@@ -22,8 +22,9 @@ public class BookController {
 
 @GetMapping("all-books")
     public List<Book> getAllBooks(){
+    return bookshelf;
 
-}
+  }
 
 }
 
