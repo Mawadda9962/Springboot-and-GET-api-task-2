@@ -39,6 +39,10 @@ public class BookstoreController {
     @GetMapping("/LowStockReorderReport")
     public String LowStockReorderReport(@RequestParam Integer threshold){
 
+        String report = "";
+
+        for ()
+
     }
 
 
