@@ -27,10 +27,11 @@ public class LibraryController {
 
     @GetMapping("/add-relational-book")
     public String addRelationalBook (@RequestParam Integer id , @RequestParam String name, @RequestParam Integer AuthorId){
-        Author author = new Author(name, id, AuthorId);
-        authorList.add(author);
-        return ("Author added Successfully");
-    }
+
+        for (Author a : authorList){
+
+        }
+
 
 
 
