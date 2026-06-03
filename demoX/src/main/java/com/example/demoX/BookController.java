@@ -12,7 +12,7 @@ public class BookController {
 
     private static List<Book> bookshelf = new ArrayList<Book>();
 
-@GetMapping("AddingBook")
+@GetMapping("/add-book")
     public String addBook (@RequestParam int id, @RequestParam String name){
         Book book = new Book(id,name);
         bookshelf.add(book);
