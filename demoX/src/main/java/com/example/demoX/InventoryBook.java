@@ -12,4 +12,36 @@ public class InventoryBook {
         StockCount = stockCount;
         this.price = price;
     }
+
+    public Integer getBookId() {
+        return BookId;
+    }
+
+    public void setBookId(Integer bookId) {
+        BookId = bookId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Integer getStockCount() {
+        return StockCount;
+    }
+
+    public void setStockCount(Integer stockCount) {
+        StockCount = stockCount;
+    }
 }
