@@ -1,4 +1,4 @@
-/*package com.example.demoX;
+package com.example.demoX;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -60,5 +60,5 @@ public Book findById(@RequestParam int id){
     }
     return ("Sorry, This id book is not found");
   }
-}*/
+}
 

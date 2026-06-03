@@ -47,9 +47,36 @@ public class LibraryController {
     }
 
     @GetMapping("/author-report")
-    public String AuthorReport(@RequestParam String authorName){
+    public String authorReport(@RequestParam String authorName) {
+        Author foundAuthor = null;
 
+        for (Author a : authorList) {
+            if (a.getName().equalsIgnoreCase(authorName)) {
+                foundAuthor = a;
+            }
+        }
+
+        if (foundAuthor == null) {
+            return "Error: Author not found!";
+        }
+
+        String report = "Author: " + foundAuthor.getName();
+
+        String books = "";
+
+        for (Book b : bookList) {
+            if (b.getAuthorId() == foundAuthor.getId()) {
+                books = books + b.getName() + ", ";
+            }
+        }
+
+        if (books.isEmpty()) {
+            report = report + "None";
+        } else {
+            report = report + books;
+        }
+
+        return report;
     }
-
 
 }
