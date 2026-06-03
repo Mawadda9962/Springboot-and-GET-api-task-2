@@ -17,6 +17,7 @@ public class BookController {
     public String addBook (@RequestParam int id, @RequestParam String name){
         Book book = new Book(id,name);
         bookshelf.add(book);
+        return ("Book added Successfully");
     }
 }
 
