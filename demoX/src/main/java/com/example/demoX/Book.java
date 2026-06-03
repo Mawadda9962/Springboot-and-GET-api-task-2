@@ -4,6 +4,7 @@ public class Book {
 
     private int id;
     private String name;
+    String biograph;
 
     public Book(int id, String name) {
         this.id = id;
