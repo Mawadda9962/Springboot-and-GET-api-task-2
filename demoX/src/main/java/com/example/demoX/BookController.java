@@ -1,5 +1,6 @@
 package com.example.demoX;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +12,7 @@ public class BookController {
 
     private static List<Book> bookshelf = new ArrayList<Book>();
 
-
+@GetMapping("AddingBook")
     public String addBook (@RequestParam int id, @RequestParam String name){
         Book book = new Book(id,name);
         bookshelf.add(book);
