@@ -15,6 +15,7 @@ public class BookController {
 
     public String addBook (int id, String name){
         Book book = new Book(id,name);
+        bookshelf.add(book);
     }
 }
 
