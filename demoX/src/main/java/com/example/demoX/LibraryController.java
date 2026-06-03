@@ -19,6 +19,7 @@ public class LibraryController {
         return ("Author added Successfully");
     }
 
-    @
+    @GetMapping("/all-authors")
+    public String allAuthor
 
 }
