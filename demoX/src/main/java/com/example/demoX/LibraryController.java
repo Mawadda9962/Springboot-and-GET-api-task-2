@@ -30,7 +30,6 @@ public class LibraryController {
 
         boolean authorExists = false ;
 
-
         for (Author a : authorList){
             if (a.getId() == AuthorId){
                 authorExists = true;
