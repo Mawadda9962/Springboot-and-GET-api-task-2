@@ -39,7 +39,9 @@ public Book findById(@RequestParam int id){
 
 
 @GetMapping("find-by-name")
-    public Book findByName(@RequestParam)
+    public Book findByName(@RequestParam String name){
+
+}
 
 
 }
