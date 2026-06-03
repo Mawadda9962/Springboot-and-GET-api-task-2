@@ -27,6 +27,9 @@ public class BookController {
   }
 
 @GetMapping("find-by-id")
+public Book findById(@RequestParam int id){
+
+}
 
 }
 
