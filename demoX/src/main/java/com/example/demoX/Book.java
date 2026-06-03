@@ -4,10 +4,10 @@ public class Book {
 
     private int id;
     private String name;
-    private String authorId;
+    private Integer authorId;
 
 
-    public Book(int id, String name, String authorId) {
+    public Book(int id, String name, Integer authorId) {
         this.id = id;
         this.name = name;
         this.authorId = authorId;
@@ -29,11 +29,11 @@ public class Book {
         this.name = name;
     }
 
-    public String getAuthorId() {
+    public Integer getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(String authorId) {
+    public void setAuthorId(Integer authorId) {
         this.authorId = authorId;
     }
 }
