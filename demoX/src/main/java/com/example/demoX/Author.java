@@ -19,7 +19,7 @@ public class Author {
     public void setId(int id) {
         this.id = id;
     }
-
+a
     public String getName() {
         return name;
     }
