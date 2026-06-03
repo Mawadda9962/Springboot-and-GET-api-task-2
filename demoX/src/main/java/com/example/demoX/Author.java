@@ -11,4 +11,6 @@ public class Author {
         this.id = id;
         this.biograph = biograph;
     }
+    \
+
 }
