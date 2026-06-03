@@ -7,7 +7,7 @@ import java.util.List;
 @RestController
 public class LibraryController {
     private static List<Author> authorList;
-    private
+    private static List<Book> bookList;
 
 
 }
