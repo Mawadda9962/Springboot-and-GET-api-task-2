@@ -25,7 +25,7 @@ public class BookstoreController {
     @GetMapping("/checkStock")
     public String checkStock(@RequestParam int id) {
         for (InventoryBook I : inventoryBooks) {
-            if (I.getBookId() == id) {
+            if (I.getBookId().equals(id)) {
                 if (I.getStockCount() > 0) {
                     return "Available! Title: " + I.getTitle() + " " + "Price: " + I.getPrice() + " " + "Stock: " + I.getStockCount();
                 } else {
