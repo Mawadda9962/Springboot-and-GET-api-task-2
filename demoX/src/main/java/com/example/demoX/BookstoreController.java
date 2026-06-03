@@ -25,7 +25,9 @@ public class BookstoreController {
     @GetMapping("/checkStock")
     public String checkStock(@RequestParam Integer id){
 
-        for ()
+        for (InventoryBook I : inventoryBooks){
+
+        }
     }
 
 
