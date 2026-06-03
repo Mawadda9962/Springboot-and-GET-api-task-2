@@ -13,19 +13,19 @@ public class LibraryController {
     private static List<Book> bookList = new ArrayList<>();
 
 
-    @GetMapping("/add-author")
+    @GetMapping("/addAuthor")
     public String addAuthor (@RequestParam String name, @RequestParam int id, @RequestParam String biography){
         Author author = new Author(name, id, biography);
         authorList.add(author);
         return ("Author added Successfully");
     }
 
-    @GetMapping("/all-authors")
+    @GetMapping("/allAuthors")
     public List<Author> getAuthorList(){
         return authorList;
     }
 
-    @GetMapping("/add-relational-book")
+    @GetMapping("/addRelationalBook")
     public String addRelationalBook (@RequestParam Integer id , @RequestParam String name, @RequestParam Integer AuthorId){
 
         boolean authorExists = false ;
@@ -46,7 +46,7 @@ public class LibraryController {
 
     }
 
-    @GetMapping("/author-report")
+    @GetMapping("/authorReport")
     public String authorReport(@RequestParam String authorName) {
         Author foundAuthor = null;
 
