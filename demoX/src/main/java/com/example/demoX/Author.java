@@ -6,4 +6,9 @@ public class Author {
     private  String biograph;
 
 
+    public Author(String name, int id, String biograph) {
+        this.name = name;
+        this.id = id;
+        this.biograph = biograph;
+    }
 }
