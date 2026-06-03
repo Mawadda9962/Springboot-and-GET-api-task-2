@@ -22,4 +22,9 @@ public class BookstoreController {
         return ("Book added to a catalog successfully");
     }
 
+    @GetMapping
+
+
+
+
 }
