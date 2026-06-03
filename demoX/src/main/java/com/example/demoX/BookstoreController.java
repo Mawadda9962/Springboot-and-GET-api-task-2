@@ -36,8 +36,9 @@ public class BookstoreController {
         return "This book ID does not exist in our catalog!";
     }
 
-    @GetMapping()
-    public static
+    @GetMapping("/LowStockReorderReport")
+    public String LowStockReorderReport
+
 
 
 
