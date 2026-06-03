@@ -1,5 +1,6 @@
 package com.example.demoX;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class BookController {
 
 
 
-    public String addBook (int id, String name){
+    public String addBook (@RequestParam int id, @RequestParam String name){
         Book book = new Book(id,name);
         bookshelf.add(book);
     }
