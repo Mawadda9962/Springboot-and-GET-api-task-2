@@ -43,15 +43,13 @@ public class BookstoreController {
 
         for (InventoryBook b : inventoryBooks) {
             if (b.getStockCount() <= threshold) {
-                report = "Title: " + b.getTitle() + " " + "Stock" + b.getStockCount();
+                report = report + "Title: " + b.getTitle() + " " + "Stock" + b.getStockCount();
             }
         }
         if (report.isEmpty()) {
             return "No books currently need reordering!";
         }
 
-        return (" completed report to the browser");
-
+        return report;
     }
-
 }
