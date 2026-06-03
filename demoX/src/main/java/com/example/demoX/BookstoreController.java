@@ -27,7 +27,7 @@ public class BookstoreController {
         for (InventoryBook I : inventoryBooks) {
             if (I.getBookId() == id) {
                 if (I.getStockCount() > 0) {
-                    return "Available! Title: " + I.getTitle() + "Price: " + I.getPrice() + "Stock: " + I.getStockCount();
+                    return "Available! Title: " + I.getTitle() + " " + "Price: " + I.getPrice() + " " + "Stock: " + I.getStockCount();
                 } else {
                     return "Sorry, this books is currently sold out!";
                 }
@@ -35,6 +35,8 @@ public class BookstoreController {
         }
         return "This book ID does not exist in our catalog!";
     }
+
+    @GetMapping()
 
 
 
